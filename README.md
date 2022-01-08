@@ -32,6 +32,6 @@ During my development, I have used different state management and technologies i
 
 ### `To start a project` 
 
-1- Run 'npm install react-scripts'
+1- Run 'npm install react-scripts :-'
 
 2- Run 'npm start'
