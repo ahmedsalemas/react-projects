@@ -20,7 +20,7 @@ const Home = ({ posts }) => {
 
     return (
         <div className="container home">
-            <h4 className="center">Home</h4>
+            <h4 className="center" style={{ color: 'red' }}>Home</h4>
             {posts.length ? (
                 posts.map(
                     post => {
