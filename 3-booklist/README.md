@@ -4,6 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## booklist project
 
+### This project lets the user add books to his reading list and save it in his browser's local storage.
+
 - Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 - Reducers is code which centralizes our methodes for changing states into single function
 - Local storage to store data locally in the user browser
