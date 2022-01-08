@@ -1,6 +1,4 @@
 # react-projects
-projects developed using react (hooks-contexts-redux)
-
 
 Hi, My name is Ahmed Mohamed Salem, I am a software engineer hoping to become a full-stack developer (MERN stack).
 
