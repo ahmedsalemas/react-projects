@@ -30,7 +30,7 @@ some of the state management and technologies i have used :-
 
 10)React-Router V6
 
-*** To start a project 
+### `To start a project` 
 
 1- Run 'npm install react-scripts'
 
