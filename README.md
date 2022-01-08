@@ -8,7 +8,7 @@ In this repository, you will find my own developed react projects
 
 During my development, I have used different state management and technologies in different projects
 
-### `some of the state management and technologies i have used :-`
+### `Some of the State Management and Technologies I have used :-`
 
 1)Contexts
 
