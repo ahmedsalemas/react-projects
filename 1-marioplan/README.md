@@ -24,6 +24,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React router V6 which is a fully-featured client and server-side routing library for React.
 - Higher-order component (HOC) is an advanced technique in React for reusing component logic. 
 - Hooks let you hook into React state and lifecycle features from function components. Hooks don't work inside classes — they let us use React without classes. 
+- moment which is a date format library
+
 ### 2) Firebase (backend)
 
 - I have used firestore and connect it with redux store to handle my data using 'react redux firebase' library.
