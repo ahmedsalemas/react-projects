@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## poketimes project
 
-This project was built to use and practices on React, Redux and other libraries.
+### This project was built to use and practices on React, Redux and other libraries :-
 
 - React which is a free and open-source front-end JavaScript library for building user interfaces based on UI components. 
 
