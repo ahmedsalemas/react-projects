@@ -26,6 +26,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### 2) Firebase (backend)
 
--I have used firestore and connect it with redux store to handle my data using 'react redux firebase' library.
--I have used firebase Authentication to handle user signin,signup and signout.
--I have used firebase hostig service.
+- I have used firestore and connect it with redux store to handle my data using 'react redux firebase' library.
+- I have used firebase Authentication to handle user signin,signup and signout.
+- I have used firebase hostig service.
