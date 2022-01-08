@@ -16,7 +16,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### This project was built using :-
 
-1) React & Redux (frontend)
+### 1) React & Redux (frontend)
 
 - React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. 
 - Redux facilitate state management as it is a central data store for all app data and any component can access data from it.
@@ -24,7 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React router V6 which is a fully-featured client and server-side routing library for React.
 
 
-2) Firebase (backend)
+### 2) Firebase (backend)
 
 -I have used firestore and connect it with redux store to handle my data using 'react redux firebase' library.
 -I have used firebase Authentication to handle user signin,signup and signout.
