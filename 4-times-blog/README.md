@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## times-blog project
 
-### This project let user to Add, Read, Delete his blogs and It was built using :-
+### This project let users Add, Read, Delete their blogs and It was built using  :-
 
 - React which is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
 - Hooks which let you hook into React state and lifecycle features from function components. Hooks don't work inside classes — they let us use React without classes.
