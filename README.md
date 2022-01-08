@@ -29,3 +29,7 @@ some of the state management and technologies i have used :-
 9)Axios
 
 10)React-Router V6
+
+*** To start a project 
+1- Run 'npm install react-scripts'
+2- Run 'npm start'
