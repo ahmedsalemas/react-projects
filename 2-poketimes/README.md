@@ -17,3 +17,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Hooks let you hook into React state and lifecycle features from function components. Hooks don't work inside classes — they let us use React without classes. 
 
 - Axios which is a promise-based HTTP Client for node.js and the browser. It can run in the browser and nodejs with the same codebase. On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.
+
+### `To start a project :-` 
+
+1- Run 'npm install react-scripts'
+
+2- Run 'npm start'
