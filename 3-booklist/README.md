@@ -12,3 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Reducers is code which centralizes methodes for changing states into single function.
 - Local storage to store data locally in the user browser.
 - Hooks let you hook into React state and lifecycle features from function components. Hooks don't work inside classes — they let us use React without classes.
+
+
+### `To start a project :-` 
+
+1- Run 'npm install react-scripts'
+
+2- Run 'npm start'
