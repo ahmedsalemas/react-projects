@@ -11,8 +11,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - React router which is a fully-featured client and server-side routing library for React.
 - JSON Server which is a Node Module that you can use to create demo REST JSON services within a short span of minutes.
 
-## To start project :-
 
- - npm install react-scripts
- - npm start
- - npx json-server --watch data/db.json --port 8000
+### `To start a project :-` 
+
+1- Run 'npm install react-scripts'
+
+2- Run 'npm start'
+
+3- npx json-server --watch data/db.json --port 8000
