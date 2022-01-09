@@ -10,3 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 -  In this project, I have explained how to use context inside function component and class component and how to use 'usecontext'.
+
+
+### `To start a project :-` 
+
+1- Run 'npm install react-scripts'
+
+2- Run 'npm start'
+
