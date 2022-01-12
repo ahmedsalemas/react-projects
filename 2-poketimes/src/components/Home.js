@@ -46,7 +46,7 @@ const Home = ({ posts }) => {
 
 const mapStateToProps = (state) => {
     return {
-        posts: state.posts
+        posts: state.posts.posts
     }
 }
 

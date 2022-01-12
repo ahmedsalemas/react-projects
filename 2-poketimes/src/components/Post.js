@@ -8,13 +8,12 @@ import { useSelector } from "react-redux";
 
 
 const Post = ({ deletePost }, props) => {
-    console.log(props.match)
 
 
     const navigate = useNavigate();
     // const [post, setPost] = useState({});
     const { post_id } = useParams();
-    const post = useSelector((state) => state.posts.find(post => post.id === post_id));
+    const post = useSelector((state) => state.posts.posts.find(post => post.id === post_id));
     // useEffect(() => {
     //     axios.get('https://jsonplaceholder.typicode.com/posts/' + post_id)
     //         .then(
