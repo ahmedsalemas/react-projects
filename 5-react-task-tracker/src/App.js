@@ -11,21 +11,16 @@ const App = () => {
   const [tasks, setTasks] = useState([])
 
   useEffect(() => {
-    const getTasks = async () => {
-      const tasksFromServer = await fetchTasks()
-      setTasks(tasksFromServer)
-    }
 
-    getTasks()
+    fetch('http://localhost:8000/tasks').then(
+      res => {
+        const data = res.json()
+        return data
+      }
+    ).then(data => { setTasks(data) })
+
   }, [setTasks])
 
-  // Fetch Tasks
-  const fetchTasks = async () => {
-    const res = await fetch('http://localhost:8000/tasks')
-    const data = await res.json()
-
-    return data
-  }
 
   // Fetch Task
   const fetchTask = async (id) => {
@@ -36,18 +31,21 @@ const App = () => {
   }
 
   // Add Task
-  const addTask = async (task) => {
-    const res = await fetch('http://localhost:8000/tasks', {
+  const addTask = (task) => {
+    fetch('http://localhost:8000/tasks', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
       },
       body: JSON.stringify(task),
+    }).then(
+      res => {
+        const data = res.json()
+        return data
+      }
+    ).then(data => {
+      setTasks([...tasks, data])
     })
-
-    const data = await res.json()
-
-    setTasks([...tasks, data])
 
     // const id = Math.floor(Math.random() * 10000) + 1
     // const newTask = { id, ...task }
@@ -55,14 +53,16 @@ const App = () => {
   }
 
   // Delete Task
-  const deleteTask = async (id) => {
-    const res = await fetch(`http://localhost:8000/tasks/${id}`, {
+  const deleteTask = (id) => {
+    fetch(`http://localhost:8000/tasks/${id}`, {
       method: 'DELETE',
+    }).then(res => {
+      //We should control the response status to decide if we will change the state or not.
+      res.status === 200
+        ? setTasks(tasks.filter((task) => task.id !== id))
+        : alert('Error Deleting This Task')
     })
-    //We should control the response status to decide if we will change the state or not.
-    res.status === 200
-      ? setTasks(tasks.filter((task) => task.id !== id))
-      : alert('Error Deleting This Task')
+
   }
 
   // Toggle Reminder
@@ -70,21 +70,22 @@ const App = () => {
     const taskToToggle = await fetchTask(id)
     const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
 
-    const res = await fetch(`http://localhost:8000/tasks/${id}`, {
+    fetch(`http://localhost:8000/tasks/${id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',
       },
       body: JSON.stringify(updTask),
-    })
-
-    const data = await res.json()
-
-    setTasks(
-      tasks.map((task) =>
-        task.id === id ? { ...task, reminder: data.reminder } : task
+    }).then(res => {
+      const data = res.json()
+      return data
+    }).then(data => {
+      setTasks(
+        tasks.map((task) =>
+          task.id === id ? { ...task, reminder: data.reminder } : task
+        )
       )
-    )
+    })
   }
 
   return (
