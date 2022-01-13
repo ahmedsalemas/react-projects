@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## meetup project
 
-###This is a meetup app where users can add meetup points, delete them and add meetups to favorites 
+### This is a meetup app where users can add meetup points, delete them and add meetups to favorites 
 
 
 ### This project was built using :-
